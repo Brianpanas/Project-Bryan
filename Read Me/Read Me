@@ -1,0 +1,20 @@
+All button styles are controlled by CSS custom properties (variables) in the :root section of the SCSS file.
+
+To customize the button, simply update the values of these variables. The :root section is at the top of the SCSS file (before any other styles).
+
+In file index.scss
+
+:root {
+    --button-background-color: #4CAF50;     /* Background color of the button */
+    --button-color: white;                   /* Text color of the button */
+    --button-padding: 10px 20px;              /* Padding for the button */
+    --button-border-radius: 50px;             /* Border radius of the button */
+    --button-width: 180px;                     /* Button width (can be adjusted or made flexible) */
+    --button-font-size: 16px;                 /* Font size for the button */
+    --button-margin-top: 20px;                /* Margin at the top of the button */
+    --button-transition: background-color 0.3s; /* Transition for background color */
+
+    --button-background-color-dark: #3e8e41; /* Dark mode button background when active */
+    --button-hover-color: #45a049; /* Color effect when hover */
+}
+
