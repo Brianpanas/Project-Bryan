@@ -1,0 +1,30 @@
+* Important things to know
+    • Always Add the ProjectBry Folder 
+    • Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
+
+* How to use. 
+    • Import "ProjectBry/CSS/PBStyle.css" to your scss file(Take note: Follow your path)
+    • Add this:
+    <div class="container">
+        <button id="darkModeToggle" onclick="controller_Btn_DarkMode()">Dark Mode</button>
+    </div>
+
+    <script type="module" src="./ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
+
+    • Codes needed 
+        Take notes of the comments here
+
+:root {
+    --button-background-color: transparent;     /* Change value for Background color of the button */
+    --button-border-radius: 50px;
+    --button-margin-top: 20px;                /* Change value for Margin at the top of the button */
+    --button-transition: background-color 0.3s; /* Change value for Transition for background color */
+    --button-button-position-from-top: 20px; /* Change the position of the button from top */
+    --button-button-position-from-right: 10px; /* Change the position of the button from right */
+    
+    --text-color: white; /* Change the Text color when dark mode is active */
+    --button-background-color-dark: #3e8e41; /* Change value for Dark mode button background when active */
+    --button-hover-color: gray; /* Change value for Color effect when hover */
+}
+
+
