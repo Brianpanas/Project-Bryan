@@ -7,10 +7,12 @@
 </head>
 <body>
     <div class="container">
-        <button id="darkModeToggle" onclick="controller_Btn_DarkMode()">Dark Mode</button>
+        <button id="darkModeToggle" onclick="controller_Btn_DarkMode()">
+            <span id="darkModeIcon">🌑</span>  <!-- Default moon icon -->
+        </button>
     </div>
 
-    <script type="module" src="ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
+    <script type="module" src="./ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
 </body>
 </html>
 
