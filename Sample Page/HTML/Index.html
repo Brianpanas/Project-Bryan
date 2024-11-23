@@ -3,16 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Mode Toggle</title>
-    <link rel="stylesheet" href="../CSS/PBStyle.css">
+    <link rel="stylesheet" href="ProjectBry/CSS/PBStyle.css">
 </head>
 <body>
-    <div class="container">
-        <button id="darkModeToggle" onclick="controller_Btn_DarkMode()">
-            <span id="darkModeIcon">🌑</span>  <!-- Default moon icon -->
+    <div class="containerRB">
+        <button id="darkModeToggleRB" onclick="controller_Btn_DarkMode()">
+            <!-- Default image for dark mode (moon) -->
+            <img id="darkModeIcon" src="../../src/day-and-night.png" alt="Day/Night Icon" title="Toggle light/dark mode" />
         </button>
     </div>
 
-    <script type="module" src="../Scripts/Controller_Btn_DarkMode.js"></script>
+    <script type="module" src="ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
 </body>
 </html>
-

@@ -7,18 +7,8 @@
 
 /***********************************************************************************************************************************************************************************************************/
 /*Root*/
-:root {
-    --button-background-color: transparent;     /* Change value for Background color of the button */
-    --button-border-radius: 50px;
-    --button-margin-top: 20px;                /* Change value for Margin at the top of the button */
-    --button-transition: background-color 0.3s; /* Change value for Transition for background color */
-    --button-button-position-from-top: 20px; /* Change the position of the button from top */
-    --button-button-position-from-right: 10px; /* Change the position of the button from right */
-    
-    --text-color: white; /* Change the Text color when dark mode is active */
-    --button-background-color-dark: #3e8e41; /* Change value for Dark mode button background when active */
-    --button-hover-color: rgba(0, 0, 0, 0.5); /* Change value for Color effect when hover */
-}
+
+
 /*Root*/
 /***********************************************************************************************************************************************************************************************************/
 
@@ -32,10 +22,9 @@ body {
     background-color: white;
     color: black;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s;  
 }
 
-.container {
+.containerRB {
     text-align: center;
     margin-top: 50px;
 }
@@ -47,29 +36,32 @@ body.dark-mode {
     color: var(--text-color);
 }
 
-#darkModeToggle {
-    background-color: var(--button-background-color);
+#darkModeToggleRB {
+    border-radius: var(--button-border-radius);
     border: none;
     cursor: pointer;
-    font-size: var(--button-font-size);
-    margin-top: var(--button-margin-top);
-    transition: var(--button-transition);
     position: absolute;
-    top: var(--button-button-position-from-top); 
-    right: var(--button-button-position-from-right);  
-    border-radius: var(--button-border-radius);
+    top: var(--button-position-from-top); 
+    right: var(--button-position-from-right); 
+}
+
+#darkModeIcon {
+    width: var(--button-width-size);  /* Adjust size as needed */
+    padding: 5px;
+    height: var(--button-height-size); /* Adjust size as needed */
 }
 
 
-#darkModeToggle:hover {
-    background-color: var(--button-hover-color);
+body.dark-mode #darkModeToggleRB {
+    background-color: var(--button-background-color-on); /* Light color for dark mode */
 }
 
-/* Dark Mode Button style when active */
-#darkModeToggle:hover {
-    background-color: var(--button-hover-color);
-    border-radius: var(--button-border-radius);
+/* Button color when dark mode is not active */
+body:not(.dark-mode) #darkModeToggleRB {
+    background-color: var(--button-background-color-off); /* Transparent color for light mode */
 }
+
+/* Dark Mode Styles */
 
 /*General Styles*/
 /***********************************************************************************************************************************************************************************************************/

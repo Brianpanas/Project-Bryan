@@ -4,30 +4,72 @@
 
 * How to use. 
     • Import "ProjectBry/CSS/PBStyle.css" to your scss file(Take note: Follow your path)
-    • Add this:
+    • Add this (to your prefer section but highly suggest on the top part of your html):
+    • Take note of the src path base on your folder structure
 
-    <div class="container">
-        <button id="darkModeToggle" onclick="controller_Btn_DarkMode()">
-            <span id="darkModeIcon">🌑</span>  <!-- Default moon icon -->
+    <div class="containerRB">
+        <button id="darkModeToggleRB" onclick="controller_Btn_DarkMode()">
+            <!-- Default image for dark mode (moon) -->
+            <img id="darkModeIcon" src="../../src/day-and-night.png" alt="Day/Night Icon" title="Toggle light/dark mode" />
         </button>
     </div>
 
     <script type="module" src="./ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
 
-    • Codes needed 
+    • Codes needed (to ajust the appearance and position base on your preference)
         Take notes of the comments here
 
 :root {
-    --button-background-color: transparent;     /* Change value for Background color of the button */
-    --button-border-radius: 50px;
-    --button-margin-top: 20px;                /* Change value for Margin at the top of the button */
-    --button-transition: background-color 0.3s; /* Change value for Transition for background color */
-    --button-button-position-from-top: 20px; /* Change the position of the button from top */
-    --button-button-position-from-right: 10px; /* Change the position of the button from right */
+    --button-width-size: 40px;              /* Change value for width size */
+    --button-height-size: 30px;             /* Change value for height size */
+    --button-position-from-top: 50px; /* Change the position of the button from top */
+    --button-position-from-right: 10px; /* Change the position of the button from right */
     
     --text-color: white; /* Change the Text color when dark mode is active */
-    --button-background-color-dark: #3e8e41; /* Change value for Dark mode button background when active */
-    --button-hover-color: rgba(0, 0, 0, 0.5); /* Change value for Color effect when hover */
+    --button-border-radius: 50px;
+
+    /* Change the Button color when dark mode is on */
+    --button-background-color-on: white;
+
+    /* Change the Button color when dark mode is off */
+    --button-background-color-off: gray;
 }
 
 
+* Adding Backgrounds for Specific Elements in Dark Mode: 
+
+    • If you have elements (e.g., classes or IDs) with their own backgrounds that you want to include in dark mode, simply add the following CSS rules to change their background when dark mode is activated:
+
+
+    • For an ID (e.g., #forId):
+
+    body.dark-mode #forId {
+        background-color: #121212; /* Set background color for dark mode */
+    }
+
+    • For a class (e.g., .forClass):
+
+    body.dark-mode .forClass {
+        background-color: #121212;  /* Set background color for dark mode */
+    }
+
+    • If you also want to change the color of the texts in the specific element just add the color in the code. See the guide below:
+
+    body.dark-mode #forId {
+        background-color: #121212; /* Set background color for dark mode */
+        color: red;                /* Set text color for dark mode */
+    }
+
+    • For a class (e.g., .forClass):
+
+    body.dark-mode .forClass {
+        background-color: #121212;  /* Set background color for dark mode */
+        color: red;                /* Set text color for dark mode */
+    }
+
+
+* Final Notes: 
+
+Make sure to adjust paths to the PBStyle.css and image files based on your project’s folder structure.
+You can further customize the appearance of the dark mode by updating the CSS variables and adding additional rules for other elements.
+This setup allows you to easily implement dark mode functionality and customize it to fit your project’s needs.

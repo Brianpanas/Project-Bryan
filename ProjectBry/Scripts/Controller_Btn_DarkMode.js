@@ -5,27 +5,23 @@ import { darkModeButton, darkModeIcon } from './Elements_Global.js';
 /* Controller */
 function controller_Btn_DarkMode() {
     const body = document.body;
-
+    
     // Check the current dark mode status in localStorage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        darkModeIcon.textContent = '☀️';  // Change to sun emoji when dark mode is active
-    } else {
-        body.classList.remove('dark-mode');
-        darkModeIcon.textContent = '🌑';  // Change to moon emoji when dark mode is disabled
-    }
-
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    
     // Toggle dark mode class
-    body.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode', !isDarkMode);
+
+    // Change the image based on dark mode status
+    if (body.classList.contains('dark-mode')) {
+        darkModeIcon.src = '../../src/day-and-night.png';  // Set the image to sun when dark mode is active
+    } else {
+        darkModeIcon.src = '../../src/day-and-night.png';  // Set the image to moon when dark mode is inactive
+    }
 
     // Store dark mode status in local storage
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        localStorage.setItem('darkMode', 'disabled');
-    }
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
 }
-
 /* Controller */
 
 /* Declare Global */

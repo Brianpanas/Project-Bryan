@@ -7,9 +7,8 @@
 
 /***********************************************************************************************************************************************************************************************************/
 /*Root*/
-:root {
 
-}
+
 /*Root*/
 /***********************************************************************************************************************************************************************************************************/
 
@@ -23,10 +22,9 @@ body {
     background-color: white;
     color: black;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s;  
 }
 
-.container {
+.containerRB {
     text-align: center;
     margin-top: 50px;
 }
@@ -38,29 +36,32 @@ body.dark-mode {
     color: var(--text-color);
 }
 
-#darkModeToggle {
-    background-color: var(--button-background-color);
+#darkModeToggleRB {
+    border-radius: var(--button-border-radius);
     border: none;
     cursor: pointer;
-    font-size: var(--button-font-size);
-    margin-top: var(--button-margin-top);
-    transition: var(--button-transition);
     position: absolute;
-    top: var(--button-button-position-from-top); 
-    right: var(--button-button-position-from-right);  
-    border-radius: var(--button-border-radius);
+    top: var(--button-position-from-top); 
+    right: var(--button-position-from-right); 
+}
+
+#darkModeIcon {
+    width: var(--button-width-size);  /* Adjust size as needed */
+    padding: 5px;
+    height: var(--button-height-size); /* Adjust size as needed */
 }
 
 
-#darkModeToggle:hover {
-    background-color: var(--button-hover-color);
+body.dark-mode #darkModeToggleRB {
+    background-color: var(--button-background-color-on); /* Light color for dark mode */
 }
 
-/* Dark Mode Button style when active */
-#darkModeToggle:hover {
-    background-color: var(--button-hover-color);
-    border-radius: var(--button-border-radius);
+/* Button color when dark mode is not active */
+body:not(.dark-mode) #darkModeToggleRB {
+    background-color: var(--button-background-color-off); /* Transparent color for light mode */
 }
+
+/* Dark Mode Styles */
 
 /*General Styles*/
 /***********************************************************************************************************************************************************************************************************/
