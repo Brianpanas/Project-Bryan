@@ -36,29 +36,34 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+.containerRB {
+    text-align: center;
+    margin-top: 50px;
+}
+
 #darkModeToggleRB {
     border-radius: var(--button-border-radius);
     border: none;
     cursor: pointer;
     position: absolute;
-    top: var(--button-position-from-top); 
-    right: var(--button-position-from-right); 
+    top: var(--button-position-from-top);
+    right: var(--button-position-from-right);
+    background-size: fill; /* Ensure the image fits the button */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    width: var(--button-width-size);
+    height: var(--button-height-size);
+    padding: 10px;
 }
 
-#darkModeIcon {
-    width: var(--button-width-size);  /* Adjust size as needed */
-    padding: 5px;
-    height: var(--button-height-size); /* Adjust size as needed */
-}
-
-
-body.dark-mode #darkModeToggleRB {
-    background-color: var(--button-background-color-on); /* Light color for dark mode */
-}
-
-/* Button color when dark mode is not active */
+/* Light Mode Styles */
 body:not(.dark-mode) #darkModeToggleRB {
-    background-color: var(--button-background-color-off); /* Transparent color for light mode */
+    background-color: var(--button-background-color-off);
+}
+
+/* Dark Mode Styles */
+body.dark-mode #darkModeToggleRB {
+    background-color: var(--button-background-color-on);
 }
 
 /* Dark Mode Styles */

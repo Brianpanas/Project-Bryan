@@ -1,1 +1,1 @@
-export const darkModeButton = document.getElementById('darkModeToggle');
+export const darkModeButton = document.getElementById('darkModeToggleRB');
