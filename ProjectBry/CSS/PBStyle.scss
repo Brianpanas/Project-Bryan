@@ -24,21 +24,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.containerRB {
-    text-align: center;
-    margin-top: 50px;
-}
 /* Light Mode Styles */
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212;
+    background-color: var(--RB-darkmode-background-color);
     color: var(--text-color);
-}
-
-.containerRB {
-    text-align: center;
-    margin-top: 50px;
 }
 
 #darkModeToggleRB {
@@ -48,22 +39,22 @@ body.dark-mode {
     position: absolute;
     top: var(--button-position-from-top);
     right: var(--button-position-from-right);
-    background-size: fill; /* Ensure the image fits the button */
+    background-size: contain; /* Ensure the image fits the button */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating */
     width: var(--button-width-size);
     height: var(--button-height-size);
     padding: 10px;
+    
+    background-color: transparent; 
 }
 
-/* Light Mode Styles */
-body:not(.dark-mode) #darkModeToggleRB {
-    background-color: var(--button-background-color-off);
+#darkModeToggleRB:hover {
+    background-color: var(--button-background-color-on); /* White with 50% opacity */
 }
 
-/* Dark Mode Styles */
-body.dark-mode #darkModeToggleRB {
-    background-color: var(--button-background-color-on);
+body:not(.dark-mode) #darkModeToggleRB:hover {
+    background-color: var(--button-background-color-off); /* Light dark shade on hover in light mode */
 }
 
 /* Dark Mode Styles */

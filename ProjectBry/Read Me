@@ -1,9 +1,9 @@
 * Important things to know
-    • Always Add the ProjectBry Folder 
+    • Always Add the ProjectBry Folder and src file
     • Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
 
 * How to use. 
-    • Import "ProjectBry/CSS/PBStyle.css" to your scss file(Take note: Follow your path)
+    • Import "ProjectBry/CSS/PBStyle" to your scss file(Take note: Follow your path)
     • Add this (to your prefer section but highly suggest on the top part of your html):
     • Take note of the src path base on your folder structure
 
@@ -26,19 +26,20 @@
         Take notes of the comments here
 
 :root {
-    --button-width-size: 50px;              /* Change value for width size */
-    --button-height-size: 50px;             /* Change value for height size */
+    --RB-darkmode-background-color: #333333; /* Set background color for dark mode */
+    --button-width-size: 30px;              /* Change value for width size */
+    --button-height-size: 30px;             /* Change value for height size */
     --button-position-from-top: 50px; /* Change the position of the button from top */
     --button-position-from-right: 10px; /* Change the position of the button from right */
     
     --text-color: white; /* Change the Text color when dark mode is active */
-    --button-border-radius: 10px;
+    --button-border-radius: 10px; /* Set border radius */
 
-    /* Change the Button color when dark mode is on */
-    --button-background-color-on: white;
+    /* Change the Button color on hover when dark mode is on */
+    --button-background-color-on: rgba(255, 255, 255, 0.3);
 
-    /* Change the Button color when dark mode is off */
-    --button-background-color-off: gray;
+    /* Change the Button color on hover when dark mode is off */
+    --button-background-color-off: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -50,13 +51,13 @@
     • For an ID (e.g., #forId):
 
     body.dark-mode #forId {
-        background-color: #121212; /* Set background color for dark mode */
+        background-color: #333333; /* Set background color for dark mode */
     }
 
     • For a class (e.g., .forClass):
 
     body.dark-mode .forClass {
-        background-color: #121212;  /* Set background color for dark mode */
+        background-color: #333333;  /* Set background color for dark mode */
     }
 
 *   If you want to apply the same background color to both an ID and a class in one rule, you can do it like this:
@@ -65,7 +66,7 @@
 
         body.dark-mode #forId, 
         body.dark-mode .forClass {
-            background-color: #121212; /* Set background color for dark mode */
+            background-color: #333333; /* Set background color for dark mode */
             color: red;
         }
 
@@ -75,14 +76,14 @@
     • If you also want to change the color of the texts in the specific element just add the color in the code. See the guide below:
 
     body.dark-mode #forId {
-        background-color: #121212; /* Set background color for dark mode */
+        background-color: #333333; /* Set background color for dark mode */
         color: red;                /* Set text color for dark mode */
     }
 
     • For a class (e.g., .forClass):
 
     body.dark-mode .forClass {
-        background-color: #121212;  /* Set background color for dark mode */
+        background-color: #333333;  /* Set background color for dark mode */
         color: red;                /* Set text color for dark mode */
     }
 
