@@ -1,0 +1,72 @@
+/* Root variables for easy customization */
+/* Global styling for the body */
+body {
+  font-family: Arial, sans-serif; }
+
+/* Button container */
+.button-container-RB {
+  text-align: center;
+  position: absolute;
+  /* Make container absolutely positioned */
+  top: var(--buttonRB-from-top);
+  /* Initial vertical position */
+  left: var(--buttonRB-from-left);
+  /* Initial horizontal position */
+  z-index: 100; }
+
+/* Customizable button styling with 3D and neon glow effect */
+.custom-button-RB {
+  background: var(--button-bg-color-RB);
+  color: var(--button-text-color-RB);
+  font-family: var(--button-font-RB);
+  font-size: var(--button-font-size-RB);
+  padding: var(--button-padding-RB);
+  border: none;
+  border-radius: var(--button-border-radius-RB);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  /* Smooth transition for all changes */
+  z-index: 100;
+  /* Ensure button is on top of other elements */
+  background-size: cover;
+  background-size: contain;
+  /* Ensure the image fits the button */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent repeating */
+  box-shadow: var(--button-shadow-normal); }
+
+/* Icon styling */
+.button-icon-RB {
+  width: var(--button-icon-size-RB);
+  height: var(--button-icon-size-RB);
+  margin-left: var(--button-icon-margin-left-RB); }
+
+/* Text styling */
+.button-text-RB {
+  white-space: nowrap;
+  font-weight: bold; }
+
+/* Hover effect with scaling and glow intensifying */
+.custom-button-RB:hover {
+  transform: scale(var(--button-hover-scale));
+  /* Button scaling on hover */
+  background: linear-gradient(145deg, #66bb6a, #388E3C);
+  /* Slightly lighter gradient on hover */
+  box-shadow: var(--button-shadow-hover);
+  /* Stronger shadow on hover */ }
+
+/* Active state (pressed down effect with scaling) */
+.custom-button-RB:active {
+  transform: scale(var(--button-active-scale));
+  /* Slightly shrink when clicked */
+  background: linear-gradient(145deg, #388E3C, #4CAF50);
+  /* Darker gradient on click */
+  box-shadow: var(--button-shadow-active);
+  /* Softer shadow when pressed */ }
+
+/*# sourceMappingURL=ButtonRBStyles.css.map */

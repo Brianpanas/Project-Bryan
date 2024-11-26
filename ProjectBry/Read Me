@@ -4,7 +4,7 @@
 
 * How to use. 
     • Import "ProjectBry/CSS/PBStyle" to your scss file(Take note: Follow your path)
-    • Add this (to your prefer section but highly suggest on the top part of your html):
+    • Add this htlm(to your prefer section but highly suggest on the top part of your html):
     • Take note of the src path base on your folder structure
 
     <div class="containerRB">
@@ -84,6 +84,55 @@
     body.dark-mode .forClass {
         background-color: #333333;  /* Set background color for dark mode */
         color: red;                /* Set text color for dark mode */
+    }
+
+
+* For the RB Button
+
+    • Import "ProjectBry/CSS/ButtonRBStyles" to your scss file(Take note: Follow your path)
+    • Add this htlm(to your prefer section but highly suggest on the top part of your html):
+    • Take note of the src path base on your folder structure
+
+
+    <div class="button-container-RB">
+        <button 
+            id="customButtonRB" 
+            class="custom-button-RB" 
+            style="background: url('./src/turquoise bg button.png') no-repeat center center; background-size: cover;"
+            onclick="controller_Btn_ButtonRB()">
+            <span class="button-text-RB">Click Me</span>
+            <img src="./src/light-mode.png" alt="Button Icon" class="button-icon-RB">
+        </button>
+    </div>
+
+
+    • Optional script (from testing the button)
+    
+    <script type="module"  src="./ProjectBry/Scripts/Controller_Btn_ButtonRB.js"></script>
+
+    • Codes needed 
+        Take notes of the comments here
+
+    :root {
+        --button-bg-color-RB: none; /* Button background color */
+        --button-text-color-RB: black; /* Button text color */
+        --button-font-RB: Arial, sans-serif; /* Font for the button text */
+        --button-padding-RB: 12px 16px; /* Padding of the button */
+        --button-border-radius-RB: 20px; /* Border radius of the button */
+        --button-icon-size-RB: 10px; /* Icon size */
+        --button-font-size-RB: 16px; /* Font size of the text */
+        --button-icon-margin-left-RB: 8px; /* Space between icon and text */
+        --button-hover-scale: 1.1; /* Button scale on hover */
+        --button-active-scale: 0.95; /* Button scale when clicked */
+
+        /* Button positioning */
+        --buttonRB-from-top: 50px;
+        --buttonRB-from-left: 50px;
+
+        /* Button shadowing */
+        --button-shadow-normal: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Normal shadow */
+        --button-shadow-hover: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(0, 0, 0, 0.1); /* Hover shadow */
+        --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Active shadow */
     }
 
 
