@@ -42,8 +42,8 @@ body.dark-mode {
     background-size: contain; /* Ensure the image fits the button */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating */
-    width: var(--button-width-size);
-    height: var(--button-height-size);
+    width: var(--button-size);
+    height: var(--button-size);
     padding: 10px;
     
     background-color: transparent; 

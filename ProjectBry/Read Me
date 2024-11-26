@@ -27,13 +27,12 @@
 
 :root {
     --RB-darkmode-background-color: #333333; /* Set background color for dark mode */
-    --button-width-size: 30px;              /* Change value for width size */
-    --button-height-size: 30px;             /* Change value for height size */
+    --button-size: 30px;             /* Change value for height size */
     --button-position-from-top: 50px; /* Change the position of the button from top */
     --button-position-from-right: 10px; /* Change the position of the button from right */
     
     --text-color: white; /* Change the Text color when dark mode is active */
-    --button-border-radius: 10px; /* Set border radius */
+    --button-border-radius: 10px;
 
     /* Change the Button color on hover when dark mode is on */
     --button-background-color-on: rgba(255, 255, 255, 0.3);
