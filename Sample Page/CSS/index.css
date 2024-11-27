@@ -274,16 +274,13 @@ body {
   --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1);
   /* Active shadow */
   /* CatRB Button Colors */
-  --CatRB-button-border-color: #3498db;
+  --CatRB-button-border-color: none;
   /* Light blue border */
-  --CatRB-button-text-color: #3498db;
+  --CatRB-button-text-color: white;
   /* Text color matches the border */
-  --CatRB-button-hover-background: #3498db;
-  /* Background color on hover */
-  --CatRB-button-hover-text-color: white;
-  /* Text color on hover */
   --CatRB-button-border-radius: 12px;
   /* Button border radius */
+  --CatRB-button-background: linear-gradient(135deg, #008b8b, #4a9e9e);
   /* CatRB Button Sizes */
   --CatRB-button-padding: 30px 30px;
   /* Padding inside the button */
@@ -303,8 +300,8 @@ body {
   /* Top position of the button container */
   --CatRB-container-left: 20px;
   /* Left position of the button container */
-  --CatRB-transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
-  /* transition effect */
+  --CatRB-button-hover-text-color: white;
+  /* Text color on hover */
   /* Layout Control */
   --CatRB-container-layout: row;
   /* Default layout is row, can be changed to 'column' */ }
