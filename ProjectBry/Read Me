@@ -2,7 +2,8 @@
     • Always Add the ProjectBry Folder and src file
     • Follow the Path Order when creating a New Page Folder (Project Folder/Module Folders/Files Folders)
 
-* How to use. 
+* For the Dark Mode Style:
+
     • Import "ProjectBry/CSS/PBStyle" to your scss file(Take note: Follow your path)
     • Add this htlm(to your prefer section but highly suggest on the top part of your html):
     • Take note of the src path base on your folder structure
@@ -87,7 +88,7 @@
     }
 
 
-* For the RB Button
+* For the RB Button:
 
     • Import "ProjectBry/CSS/ButtonRBStyles" to your scss file(Take note: Follow your path)
     • Add this htlm(to your prefer section but highly suggest on the top part of your html):
@@ -113,27 +114,104 @@
     • Codes needed 
         Take notes of the comments here
 
-    :root {
-        --button-bg-color-RB: none; /* Button background color */
-        --button-text-color-RB: black; /* Button text color */
-        --button-font-RB: Arial, sans-serif; /* Font for the button text */
-        --button-padding-RB: 12px 16px; /* Padding of the button */
-        --button-border-radius-RB: 20px; /* Border radius of the button */
-        --button-icon-size-RB: 10px; /* Icon size */
-        --button-font-size-RB: 16px; /* Font size of the text */
-        --button-icon-margin-left-RB: 8px; /* Space between icon and text */
-        --button-hover-scale: 1.1; /* Button scale on hover */
-        --button-active-scale: 0.95; /* Button scale when clicked */
+:root {
+    --button-bg-color-RB: none; /* Button background color */
+    --button-text-color-RB: black; /* Button text color */
+    --button-font-RB: Arial, sans-serif; /* Font for the button text */
+    --button-padding-RB: 12px 16px; /* Padding of the button */
+    --button-border-radius-RB: 20px; /* Border radius of the button */
+    --button-icon-size-RB: 10px; /* Icon size */
+    --button-font-size-RB: 16px; /* Font size of the text */
+    --button-icon-margin-left-RB: 8px; /* Space between icon and text */
+    --button-hover-scale: 1.1; /* Button scale on hover */
+    --button-active-scale: 0.95; /* Button scale when clicked */
 
-        /* Button positioning */
-        --buttonRB-from-top: 50px;
-        --buttonRB-from-left: 50px;
+    /* Button positioning */
+    --buttonRB-from-top: 50px;
+    --buttonRB-from-left: 50px;
 
-        /* Button shadowing */
-        --button-shadow-normal: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Normal shadow */
-        --button-shadow-hover: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(0, 0, 0, 0.1); /* Hover shadow */
-        --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Active shadow */
-    }
+    /* Button shadowing */
+    --button-shadow-normal: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Normal shadow */
+    --button-shadow-hover: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(0, 0, 0, 0.1); /* Hover shadow */
+    --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Active shadow */
+}
+
+
+* For the CatButtonStyles:
+
+    • Import "ProjectBry/CSS/CatButtonRBStyles" to your scss file(Take note: Follow your path)
+    • Add this htlm:
+
+    <div class="cat-buttonRB-container">
+        <button class="category-buttonRB">Category Button 1</button>
+        <button class="category-buttonRB">Category Button 2</button>
+        <button class="category-buttonRB">Category Button 3</button>
+        <button class="category-buttonRB">Category Button 4</button>
+    </div>
+
+    • Codes needed 
+        Take notes of the comments here
+
+* For the appearance of the Category Buttons I have to options for you.
+
+• Option 1: They say simplicity is beauty
+
+:root {
+    /* CatRB Button Colors */
+    --CatRB-button-border-color: #3498db; /* Light blue border */
+    --CatRB-button-text-color: #3498db; /* Text color matches the border */
+    --CatRB-button-hover-background: #3498db; /* Background color on hover */
+    --CatRB-button-hover-text-color: white; /* Text color on hover */
+    --CatRB-button-border-radius: 12px; /* Button border radius */
+    
+    /* CatRB Button Sizes */
+    --CatRB-button-padding: 30px 30px; /* Padding inside the button */
+    --CatRB-button-font-size: 16px; /* Font size */
+    --CatRB-button-font-weight: bold; /* Font weight */
+    
+    /* CatRB Box Shadow */
+    --CatRB-button-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    --CatRB-button-hover-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hover shadow effect */
+    
+    /* Other properties */
+    --CatRB-container-gap: 20px; /* Spacing between buttons in the container */
+    --CatRB-container-top: 20px; /* Top position of the button container */
+    --CatRB-container-left: 20px; /* Left position of the button container */
+    --CatRB-transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s; /* transition effect */
+
+    /* Layout Control */
+    --CatRB-container-layout: row; /* Default layout is row, can be changed to 'column' */
+}
+
+• Option 2: Bold & Modern with Gradient
+
+:root {
+    /* CatRB Button Colors */
+    --CatRB-button-border-color: none; /* Light blue border */
+    --CatRB-button-text-color: white; /* Text color matches the border */
+    --CatRB-button-border-radius: 12px; /* Button border radius */
+    --CatRB-button-background: linear-gradient(135deg, #008b8b, #4a9e9e);
+    
+    /* CatRB Button Sizes */
+    --CatRB-button-padding: 30px 30px; /* Padding inside the button */
+    --CatRB-button-font-size: 16px; /* Font size */
+    --CatRB-button-font-weight: bold; /* Font weight */
+    
+    /* CatRB Box Shadow */
+    --CatRB-button-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    --CatRB-button-hover-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hover shadow effect */
+    
+    /* Other properties */
+    --CatRB-container-gap: 20px; /* Spacing between buttons in the container */
+    --CatRB-container-top: 20px; /* Top position of the button container */
+    --CatRB-container-left: 20px; /* Left position of the button container */
+    --CatRB-button-hover-text-color: white; /* Text color on hover */
+
+    /* Layout Control */
+    --CatRB-container-layout: row; /* Default layout is row, can be changed to 'column' */
+}
+
+
 
 
 * Final Notes: 

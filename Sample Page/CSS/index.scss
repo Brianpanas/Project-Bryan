@@ -1,0 +1,140 @@
+/***********************************************************************************************************************************************************************************************************/
+/* Import */
+@import "../../ProjectBry/CSS/PBStyle";
+@import "../../ProjectBry/CSS/ButtonRBStyles";
+@import "../../ProjectBry/CSS/CatButtonRBStyles";
+/* Import */
+/***********************************************************************************************************************************************************************************************************/
+
+
+/***********************************************************************************************************************************************************************************************************/
+/*Root*/
+
+/*Root*/
+/***********************************************************************************************************************************************************************************************************/
+
+
+:root {
+
+    --RB-darkmode-background-color: #333333; /* Set background color for dark mode */
+    --button-size: 30px;             /* Change value for height size */
+    --button-position-from-top: 50px; /* Change the position of the button from top */
+    --button-position-from-right: 10px; /* Change the position of the button from right */
+    
+    --text-color: white; /* Change the Text color when dark mode is active */
+    --button-border-radius: 10px;
+
+    /* Change the Button color on hover when dark mode is on */
+    --button-background-color-on: rgba(255, 255, 255, 0.3);
+
+    /* Change the Button color on hover when dark mode is off */
+    --button-background-color-off: rgba(0, 0, 0, 0.1);
+
+
+
+    --button-bg-color-RB: none; /* Button background color */
+    --button-text-color-RB: black; /* Button text color */
+    --button-font-RB: Arial, sans-serif; /* Font for the button text */
+    --button-padding-RB: 12px 16px; /* Padding of the button */
+    --button-border-radius-RB: 20px; /* Border radius of the button */
+    --button-icon-size-RB: 10px; /* Icon size */
+    --button-font-size-RB: 16px; /* Font size of the text */
+    --button-icon-margin-left-RB: 8px; /* Space between icon and text */
+    --button-hover-scale: 1.1; /* Button scale on hover */
+    --button-active-scale: 0.95; /* Button scale when clicked */
+
+    /* Button positioning */
+    --buttonRB-from-top: 150px;
+    --buttonRB-from-left: 50px;
+
+    /* Button shadowing */
+    --button-shadow-normal: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Normal shadow */
+    --button-shadow-hover: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(0, 0, 0, 0.1); /* Hover shadow */
+    --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Active shadow */
+
+
+
+    /* CatRB Button Colors */
+    --CatRB-button-border-color: #3498db; /* Light blue border */
+    --CatRB-button-text-color: #3498db; /* Text color matches the border */
+    --CatRB-button-hover-background: #3498db; /* Background color on hover */
+    --CatRB-button-hover-text-color: white; /* Text color on hover */
+    --CatRB-button-border-radius: 12px; /* Button border radius */
+    
+    /* CatRB Button Sizes */
+    --CatRB-button-padding: 30px 30px; /* Padding inside the button */
+    --CatRB-button-font-size: 16px; /* Font size */
+    --CatRB-button-font-weight: bold; /* Font weight */
+    
+    /* CatRB Box Shadow */
+    --CatRB-button-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    --CatRB-button-hover-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hover shadow effect */
+    
+    /* Other properties */
+    --CatRB-container-gap: 20px; /* Spacing between buttons in the container */
+    --CatRB-container-top: 20px; /* Top position of the button container */
+    --CatRB-container-left: 20px; /* Left position of the button container */
+    --CatRB-transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s; /* transition effect */
+
+    /* Layout Control */
+    --CatRB-container-layout: row; /* Default layout is row, can be changed to 'column' */
+
+
+
+
+}
+
+
+
+
+
+
+/***********************************************************************************************************************************************************************************************************/
+/*General Styles*/
+
+/* Light Mode Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Dark Mode Styles */
+
+/*General Styles*/
+/***********************************************************************************************************************************************************************************************************/
+
+
+
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+
+/***********************************************************************************************************************************************************************************************************/
+/*Mobile*/
+@media all and (max-width:641px){
+
+}
+/*Mobile*/
+/***********************************************************************************************************************************************************************************************************/
+
+
+/***********************************************************************************************************************************************************************************************************/
+/*PC*/
+@media all and (min-width:642px){
+    /*Navigation Area*/
+    
+}
+/*PC*/
+/***********************************************************************************************************************************************************************************************************/
+
+
+/***********************************************************************************************************************************************************************************************************/
+/*Desktop*/
+@media all and (min-width:1081px){
+    
+}
+/*Desktop*/
+/***********************************************************************************************************************************************************************************************************/
+
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
