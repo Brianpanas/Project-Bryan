@@ -34,8 +34,6 @@ body {
     background: linear-gradient(to right, #388E3C 70%, #66bb6a 30%); /* Left side for text (70%) and right side for icon (30%) */
     color: var(--button-text-color-RB);
     width: var(--button-size-RB); /* Make the button width responsive */
-    z-index: 10;
-
 }
 
 /* Text styling */
@@ -43,7 +41,6 @@ body {
     white-space: nowrap;
     font-weight: bold;
     margin-left: var(--textRB-margin-from-left); /* Space between the left edge and text */
-
 }
 
 /* Icon styling */
@@ -52,7 +49,6 @@ body {
     height: var(--button-icon-size-RB);
     margin-right: var(--iconRB-from-right); /* Space between the icon and the button edge */
     background-color: transparent; /* Icon should be without a background */
-
 }
 
 /* Hover effect: Slightly change background */

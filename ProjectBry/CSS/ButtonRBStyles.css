@@ -32,8 +32,7 @@ body {
   /* Left side for text (70%) and right side for icon (30%) */
   color: var(--button-text-color-RB);
   width: var(--button-size-RB);
-  /* Make the button width responsive */
-  z-index: 10; }
+  /* Make the button width responsive */ }
 
 /* Text styling */
 .button-text-RB {
