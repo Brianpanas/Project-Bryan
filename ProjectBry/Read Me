@@ -115,28 +115,24 @@
         Take notes of the comments here
 
 :root {
-    /* Button Designing */
-    --button-bg-color-RB: none; /* Button background color */
+    --button-bg-color-RB: #388E3C; /* Set default button background color */
     --button-text-color-RB: black; /* Button text color */
     --button-font-RB: Arial, sans-serif; /* Font for the button text */
-    --button-padding-RB: 12px 16px; /* Padding of the button */
-    --button-border-radius-RB: 20px; /* Border radius of the button */
-    --button-icon-size-RB: 10px; /* Icon size */
+    --button-size-RB: 30%; /* Padding of the button */
+    --button-border-radius-RB: 10px; /* Border radius of the button */
+    --button-icon-size-RB: 16px; /* Icon size */
     --button-font-size-RB: 16px; /* Font size of the text */
     --button-icon-margin-left-RB: 8px; /* Space between icon and text */
 
     /* Button positioning */
-    --buttonRB-from-top: 50px;
-    --buttonRB-from-left: 50px;
+    --buttonRB-from-top: 150px;
+    --buttonRB-from-left: 100px;
 
-
-    /* 3D Effect Section */
-    --button-shadow-normal: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Normal shadow */
-    --button-shadow-hover: 0px 12px 24px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(0, 0, 0, 0.1); /* Hover shadow */
-    --button-shadow-active: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1); /* Active shadow */
-    --button-hover-scale: 1.1; /* Button scale on hover */
-    --button-active-scale: 0.95; /* Button scale when clicked */
+    /* Text and icon positioning */
+    --textRB-margin-from-left: 16%;
+    --iconRB-from-right: 5%;
 }
+
 
 * Note: To disable to 3D effect just simple delete the 3D Effect Section then change the backgroung color and border radius (--button-bg-color-RB: none; / --button-border-radius-RB: 20px;). You can also delete or change the background image in the html (style="background: url('./src/turquoise bg button.png') no-repeat center center; background-size: cover;")"
 

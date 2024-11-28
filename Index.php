@@ -7,7 +7,6 @@
 </head>
 <body>
 
-    <div class="containerRB">
         <button
             id="darkModeToggleRB"
             onclick="controller_Btn_DarkMode()"
@@ -16,18 +15,14 @@
             data-dark-img="./src/light-mode.png"
             style="background-image: url('./src/light-mode.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         </button>
-    </div>
 
-    <div class="button-container-RB">
-        <button 
-            id="customButtonRB" 
-            class="custom-button-RB" 
-            style="background: url('./src/turquoise bg button.png') no-repeat center center; background-size: cover;"
-            onclick="controller_Btn_ButtonRB()">
-            <span class="button-text-RB">Click Me</span>
-            <img src="./src/light-mode.png" alt="Button Icon" class="button-icon-RB">
-        </button>
-    </div>
+
+    <button 
+        class="custom-button-RB" 
+        onclick="controller_Btn_ButtonRB()">
+        <span class="button-text-RB">Click Me</span>
+        <img src="./src/light-mode.png" alt="Button Icon" class="button-icon-RB">
+    </button>
 
     <div class="cat-buttonRB-container">
         <button class="category-buttonRB">Category Button 1</button>
