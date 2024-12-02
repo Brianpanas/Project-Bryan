@@ -30,7 +30,27 @@
     /* Change the Button color on hover when dark mode is off */
     --button-background-color-off: rgba(0, 0, 0, 0.1);
 
+    --button-bg-color-RB: #388E3C; /* Set default button background color */
+    --button-text-color-RB: black; /* Button text color */
+    --button-font-RB: Arial, sans-serif; /* Font for the button text */
+    --button-size-RB: 30%; /* Padding of the button */
+    --button-border-radius-RB: 10px; /* Border radius of the button */
+    --button-icon-size-RB: 16px; /* Icon size */
+    --button-font-size-RB: 16px; /* Font size of the text */
+    --button-icon-margin-left-RB: 8px; /* Space between icon and text */
 
+    /* Button positioning */
+    --buttonRB-from-top: 150px;
+    --buttonRB-from-left: 100px;
+
+    /* Text and icon positioning */
+    --textRB-margin-from-left: 16%;
+    --iconRB-from-right: 5%;
+
+    /* Background */
+    --background-normal-RB: linear-gradient(to right, #388E3C 70%, #66bb6a 30%); 
+    --background-on-hover-RB: linear-gradient(to right, #66BB6A 70%, #A5D6A7 30%); 
+    --background-active-RB: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%); 
 
 
 

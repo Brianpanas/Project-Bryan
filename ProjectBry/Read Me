@@ -131,10 +131,12 @@
     /* Text and icon positioning */
     --textRB-margin-from-left: 16%;
     --iconRB-from-right: 5%;
+
+    /* Background */
+    --background-normal-RB: linear-gradient(to right, #388E3C 70%, #66bb6a 30%); 
+    --background-on-hover-RB: linear-gradient(to right, #66BB6A 70%, #A5D6A7 30%); 
+    --background-active-RB: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%); 
 }
-
-
-* Note: To disable to 3D effect just simple delete the 3D Effect Section then change the backgroung color and border radius (--button-bg-color-RB: none; / --button-border-radius-RB: 20px;). You can also delete or change the background image in the html (style="background: url('./src/turquoise bg button.png') no-repeat center center; background-size: cover;")"
 
 
 * For the CatButtonStyles:

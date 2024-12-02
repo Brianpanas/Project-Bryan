@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: var(--buttonRB-from-top); /* Vertical position */
     left: var(--buttonRB-from-left); /* Horizontal position */
-    background: linear-gradient(to right, #388E3C 70%, #66bb6a 30%); /* Left side for text (70%) and right side for icon (30%) */
+    background: var(--background-normal-RB); /* Left side for text (70%) and right side for icon (30%) */
     color: var(--button-text-color-RB);
     width: var(--button-size-RB); /* Make the button width responsive */
 }
@@ -53,10 +53,10 @@ body {
 
 /* Hover effect: Slightly change background */
 .custom-button-RB:hover {
-    background: linear-gradient(to right, #66bb6a 70%, #388E3C 30%); /* Reverse the colors on hover */
+    background: var(--background-on-hover-RB); /* Reverse the colors on hover */
 }
 
 /* Active state: Darker background on click */
 .custom-button-RB:active {
-    background: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%); /* Darker background on click */
+    background: var(--background-active-RB); /* Darker background on click */
 }

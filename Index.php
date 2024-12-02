@@ -11,9 +11,9 @@
             id="darkModeToggleRB"
             onclick="controller_Btn_DarkMode()"
             title="Toggle light/dark mode"
-            data-light-img="./src/night-mode.png"
+            data-light-img="./src/sun.png"
             data-dark-img="./src/light-mode.png"
-            style="background-image: url('./src/light-mode.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            style="background-image: url('./src/sun.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         </button>
 
 

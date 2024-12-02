@@ -99,7 +99,7 @@ body {
   /* Vertical position */
   left: var(--buttonRB-from-left);
   /* Horizontal position */
-  background: linear-gradient(to right, #388E3C 70%, #66bb6a 30%);
+  background: var(--background-normal-RB);
   /* Left side for text (70%) and right side for icon (30%) */
   color: var(--button-text-color-RB);
   width: var(--button-size-RB);
@@ -123,12 +123,12 @@ body {
 
 /* Hover effect: Slightly change background */
 .custom-button-RB:hover {
-  background: linear-gradient(to right, #66bb6a 70%, #388E3C 30%);
+  background: var(--background-on-hover-RB);
   /* Reverse the colors on hover */ }
 
 /* Active state: Darker background on click */
 .custom-button-RB:active {
-  background: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%);
+  background: var(--background-active-RB);
   /* Darker background on click */ }
 
 /***********************************************************************************************************************************************************************************************************/
@@ -234,6 +234,32 @@ body {
   --button-background-color-on: rgba(255, 255, 255, 0.3);
   /* Change the Button color on hover when dark mode is off */
   --button-background-color-off: rgba(0, 0, 0, 0.1);
+  --button-bg-color-RB: #388E3C;
+  /* Set default button background color */
+  --button-text-color-RB: black;
+  /* Button text color */
+  --button-font-RB: Arial, sans-serif;
+  /* Font for the button text */
+  --button-size-RB: 30%;
+  /* Padding of the button */
+  --button-border-radius-RB: 10px;
+  /* Border radius of the button */
+  --button-icon-size-RB: 16px;
+  /* Icon size */
+  --button-font-size-RB: 16px;
+  /* Font size of the text */
+  --button-icon-margin-left-RB: 8px;
+  /* Space between icon and text */
+  /* Button positioning */
+  --buttonRB-from-top: 150px;
+  --buttonRB-from-left: 100px;
+  /* Text and icon positioning */
+  --textRB-margin-from-left: 16%;
+  --iconRB-from-right: 5%;
+  /* Background */
+  --background-normal-RB: linear-gradient(to right, #388E3C 70%, #66bb6a 30%);
+  --background-on-hover-RB: linear-gradient(to right, #66BB6A 70%, #A5D6A7 30%);
+  --background-active-RB: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%);
   /* CatRB Button Colors */
   --CatRB-button-border-color: none;
   /* Light blue border */
