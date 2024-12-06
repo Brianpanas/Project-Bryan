@@ -95,15 +95,10 @@
     • Take note of the src path base on your folder structure
 
 
-    <div class="button-container-RB">
-        <button 
-            id="customButtonRB" 
-            class="custom-button-RB" 
-            style="background: url('./src/turquoise bg button.png') no-repeat center center; background-size: cover;"
-            onclick="controller_Btn_ButtonRB()">
-            <span class="button-text-RB">Click Me</span>
-            <img src="./src/light-mode.png" alt="Button Icon" class="button-icon-RB">
-        </button>
+    <div class="custom-button-RB" onclick="controller_Btn_ButtonRB()">
+        <div class="button-text-RB">Click Me</div>
+        <div class="button-icon-RB" style="background-image: url('./src/light-mode.png'); background-size: 30px;; background-position: center; background-repeat: no-repeat;">
+        </div>
     </div>
 
 
@@ -115,104 +110,106 @@
         Take notes of the comments here
 
 :root {
-    --button-bg-color-RB: #388E3C; /* Set default button background color */
-    --button-text-color-RB: black; /* Button text color */
-    --button-font-RB: Arial, sans-serif; /* Font for the button text */
-    --button-size-RB: 30%; /* Padding of the button */
-    --button-border-radius-RB: 10px; /* Border radius of the button */
-    --button-icon-size-RB: 16px; /* Icon size */
     --button-font-size-RB: 16px; /* Font size of the text */
-    --button-icon-margin-left-RB: 8px; /* Space between icon and text */
+    --button-icon-size-RB:20px; /* Icon size */
+    --button-border-radius-RB: 10px; /* Border radius of the button */
+    --buttonRB-height: 40px;
+    --buttonRB-width: 30%;
 
     /* Button positioning */
-    --buttonRB-from-top: 150px;
+    --buttonRB-from-top: 200px;
     --buttonRB-from-left: 100px;
+    --buttonRB-transform: scale(1.01);
 
-    /* Text and icon positioning */
-    --textRB-margin-from-left: 16%;
-    --iconRB-from-right: 5%;
-
-    /* Background */
-    --background-normal-RB: linear-gradient(to right, #388E3C 70%, #66bb6a 30%); 
-    --background-on-hover-RB: linear-gradient(to right, #66BB6A 70%, #A5D6A7 30%); 
-    --background-active-RB: linear-gradient(to right, #4CAF50 70%, #66bb6a 30%); 
+    /* Background Colors */
+    --background-normal-text-RB: #388E3C; /* Solid green background for text */
+    --background-normal-icon-RB: #66BB6A; /* Light green background for icon */
+    --background-active-text-RB: #4CAF50; /* Darker green for active on text */
+    --background-active-icon-RB: #81C784; /* Darker light green for active on icon */
 }
 
 
-* For the CatButtonStyles:
+* For the DashboardCardRB:
 
-    • Import "ProjectBry/CSS/CatButtonRBStyles" to your scss file(Take note: Follow your path)
+    • Import "ProjectBry/CSS/DashboardCardRB" to your scss file(Take note: Follow your path)
     • Add this htlm:
 
-    <div class="cat-buttonRB-container">
-        <button class="category-buttonRB">Category Button 1</button>
-        <button class="category-buttonRB">Category Button 2</button>
-        <button class="category-buttonRB">Category Button 3</button>
-        <button class="category-buttonRB">Category Button 4</button>
+    <div class="DashboardCardRB">
+        <div class="cardRB">
+            <div class="card-headerRB">
+                <div class="card-titleRB">
+                    <div class="card-logoRB" style="background-image: url('./src/light-mode.png');"></div>
+                    <div  class="CardheaderRB">Card Dashboard 1</div>
+                </div>
+                <p class="card-header-descriptionRB">Frontend Development</p>
+                <p class="card-header-descriptionRB2">Run baby run don't ever look back. They'll tear us apart if you give them a chance.</p>
+            </div>
+            <div class="card-progressRB">
+                <div class="progress-barRB" style="width: 70%;"></div>
+            </div>
+            <div class="card-footerRB">
+                <div class="card-dateRB">Dec 05</div>
+                <div class="teamRB">
+                    <img src="./src/ariel.jpg">
+                    <img src="./src/bector.jpg">
+                    <img src="./src/bry.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="cardRB">
+            <div class="card-headerRB">
+                <div class="card-titleRB">
+                    <div class="card-logoRB" style="background-image: url('./src/night-mode.png');"></div>
+                    <div class="CardheaderRB">Card Dashboard 2</div>
+                </div>
+                <p class="card-header-descriptionRB">Design</p>
+                <p class="card-header-descriptionRB2">Run baby run don't ever look back. They'll tear us apart if you give them a chance.</p>
+            </div>
+            <div class="card-progressRB">
+                <div class="progress-barRB" style="width: 40%;"></div>
+            </div>
+            <div class="card-footerRB">
+                <div class="card-dateRB">Nov 29</div>
+                <div class="teamRB">
+                    <img src="./src/rogie.jpg">
+                    <img src="./src/oh2.jpg">
+                    <img src="./src/os.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more here -->
     </div>
+
 
     • Codes needed 
         Take notes of the comments here
 
 * For the appearance of the Category Buttons I have to options for you.
 
-• Option 1: They say simplicity is beauty
 
 :root {
-    /* CatRB Button Colors */
-    --CatRB-button-border-color: #3498db; /* Light blue border */
-    --CatRB-button-text-color: #3498db; /* Text color matches the border */
-    --CatRB-button-hover-background: #3498db; /* Background color on hover */
-    --CatRB-button-hover-text-color: white; /* Text color on hover */
-    --CatRB-button-border-radius: 12px; /* Button border radius */
+    /* DashboardCardRB */
+    --dashboard-cardRB-top: 30px;
+    --dashboard-cardRB-left: 50px;
+    --cardRB-bg-color: #fff;  /* Background color for the card */
+    --cardRB-border-radius: 10px;  /* Border radius for rounded corners */
+    --cardRB-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Box-shadow for card */
     
-    /* CatRB Button Sizes */
-    --CatRB-button-padding: 30px 30px; /* Padding inside the button */
-    --CatRB-button-font-size: 16px; /* Font size */
-    --CatRB-button-font-weight: bold; /* Font weight */
-    
-    /* CatRB Box Shadow */
-    --CatRB-button-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    --CatRB-button-hover-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hover shadow effect */
-    
-    /* Other properties */
-    --CatRB-container-gap: 20px; /* Spacing between buttons in the container */
-    --CatRB-container-top: 20px; /* Top position of the button container */
-    --CatRB-container-left: 20px; /* Left position of the button container */
-    --CatRB-transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s; /* transition effect */
+    /* .cardRB Height and Width */
+    --cardRB-width: 400px;
+    --cardRB-height: 300px;
 
-    /* Layout Control */
-    --CatRB-container-layout: row; /* Default layout is row, can be changed to 'column' */
+    /* Hover Effect for .cardRB */
+    --cardRB-hover: translateY(-5px);
+
+    /* Font Sizes */
+    --cardRB-header-font-size: 23px;
+    --card-header-descriptionRB-font-size: 15px;
+    --card-header-descriptionRB2-font-size: 15px;
+    --cardRB-date-font-size: 16px;
 }
-
-• Option 2: Bold & Modern with Gradient
-
-:root {
-    /* CatRB Button Colors */
-    --CatRB-button-border-color: none; /* Light blue border */
-    --CatRB-button-text-color: white; /* Text color matches the border */
-    --CatRB-button-border-radius: 12px; /* Button border radius */
-    --CatRB-button-background: linear-gradient(135deg, #008b8b, #4a9e9e);
-    
-    /* CatRB Button Sizes */
-    --CatRB-button-padding: 30px 30px; /* Padding inside the button */
-    --CatRB-button-font-size: 16px; /* Font size */
-    --CatRB-button-font-weight: bold; /* Font weight */
-    
-    /* CatRB Box Shadow */
-    --CatRB-button-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    --CatRB-button-hover-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hover shadow effect */
-    
-    /* Other properties */
-    --CatRB-container-gap: 20px; /* Spacing between buttons in the container */
-    --CatRB-container-top: 20px; /* Top position of the button container */
-    --CatRB-container-left: 20px; /* Left position of the button container */
-    --CatRB-button-hover-text-color: white; /* Text color on hover */
-
-    /* Layout Control */
-    --CatRB-container-layout: row; /* Default layout is row, can be changed to 'column' */
-}
-
 
 * Final Notes: 
 
