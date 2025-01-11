@@ -3,6 +3,7 @@
 @import "../../ProjectBry/CSS/PBStyle";
 @import "../../ProjectBry/CSS/ButtonRBStyles";
 @import "../../ProjectBry/CSS/DashboardCardRB";
+@import "../../ProjectBry/CSS/Bread-RB";
 /* Import */
 /***********************************************************************************************************************************************************************************************************/
 
@@ -72,6 +73,28 @@
     --card-header-descriptionRB2-font-size: 15px;
     --cardRB-date-font-size: 16px;
     /* DashboardCardRB */
+
+
+    /* Angled Breadcrumb Navigation */
+    --rb-button-from-top: 550px; /* Vertical position */
+    --rb-button-from-left: 20px; /* Horizontal position */
+    --rb-button-margin-right: 1px; /* Gap between breadcrumb items */
+    
+    --rb-color-home: #F0F0F0; /* Home item background color */
+    --rb-color-about: #A2BCF7; /* About Us item background color */
+    --rb-color-product: #749DF5; /* Product item background color */
+    --rb-color-services: #457CF3; /* Services item background color */
+    --rb-color-contact: #165CE8; /* Contact item background color */
+    
+    --rb-font-color-home: #333333; /* Font color for Home item */
+    --rb-font-color-about: #ffffff; /* Font color for About Us item */
+    --rb-font-color-product: #ffffff; /* Font color for Product item */
+    --rb-font-color-services: #ffffff; /* Font color for Services item */
+    --rb-font-color-contact: #ffffff; /* Font color for Contact item */
+    
+    --rb-button-width: auto; /* Make width responsive */
+    --rb-button-height: auto; /* Make height responsive */
+    /* Angled Breadcrumb Navigation */
 }
 
 

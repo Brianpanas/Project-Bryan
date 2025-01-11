@@ -71,6 +71,24 @@
         <!-- Add more here -->
     </div>
 
+    <!-- Angled Breadcrumb Navigation -->
+    <ul class="rb-breadcrumb">
+        <!-- HOME breadcrumb item -->
+        <li><a href="#"><span>Home</span></a></li>
+
+        <!-- ABOUT US breadcrumb item -->
+        <li><a href="#"><span>About Us</span></a></li>
+
+        <!-- PRODUCT breadcrumb item -->
+        <li><a href="#"><span>Product</span></a></li>
+
+        <!-- SERVICES breadcrumb item -->
+        <li><a href="#"><span>Services</span></a></li>
+
+        <!-- CONTACT breadcrumb item, marked as the current page -->
+        <li class="current"><a href="#"><span>Contact</span></a></li>
+    </ul>
+
     </div>
     <script type="module" src="./ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
     <script type="module"  src="./ProjectBry/Scripts/Controller_Btn_ButtonRB.js"></script>

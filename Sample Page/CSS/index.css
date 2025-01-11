@@ -306,6 +306,103 @@ body:not(.dark-mode) #darkModeToggleRB:hover {
 /***********************************************************************************************************************************************************************************************************/
 /*Media Queries*/
 /***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Import*/
+/*Import*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Root*/
+/*Root*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*General Styles*/
+.rb-breadcrumb {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  /* Reset margin */
+  padding: 0;
+  position: absolute;
+  /* Allow for absolute positioning */
+  top: var(--rb-button-from-top);
+  /* Vertical position */
+  left: var(--rb-button-from-left);
+  /* Horizontal position */
+  width: var(--rb-button-width);
+  /* Make width responsive */
+  height: var(--rb-button-height);
+  /* Make height responsive */ }
+
+/* Apply margin-right and other styles to breadcrumb items */
+.rb-breadcrumb > li {
+  margin-right: var(--rb-button-margin-right);
+  /* Gap between breadcrumb items */
+  position: relative; }
+
+/* Angled breadcrumb link */
+.rb-breadcrumb > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  transform: skew(20deg);
+  /* Angle effect */
+  transition: background 0.3s ease, color 0.3s ease; }
+
+/* Apply specific background colors and font colors using the defined variables */
+.rb-breadcrumb > li:first-child > a {
+  background: var(--rb-color-home);
+  color: var(--rb-font-color-home); }
+
+.rb-breadcrumb > li:nth-child(2) > a {
+  background: var(--rb-color-about);
+  color: var(--rb-font-color-about); }
+
+.rb-breadcrumb > li:nth-child(3) > a {
+  background: var(--rb-color-product);
+  color: var(--rb-font-color-product); }
+
+.rb-breadcrumb > li:nth-child(4) > a {
+  background: var(--rb-color-services);
+  color: var(--rb-font-color-services); }
+
+/* Contact item with defined background and font color */
+.rb-breadcrumb > li:nth-child(5) > a {
+  background: var(--rb-color-contact);
+  color: var(--rb-font-color-contact); }
+
+/* Straighten the text */
+.rb-breadcrumb > li > a span {
+  display: inline-block;
+  transform: skew(-20deg); }
+
+/* Hover effect for breadcrumb links */
+.rb-breadcrumb > li > a:hover {
+  filter: brightness(0.85); }
+
+/* Current page breadcrumb item (Contact) */
+.rb-breadcrumb > li.current > a {
+  background: var(--rb-color-contact);
+  color: var(--rb-font-color-contact); }
+
+/*General Styles*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
+/*Mobile*/
+/*Mobile*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Tablet*/
+/*Tablet*/
+/***********************************************************************************************************************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************/
+/*Desktop*/
+/*Desktop*/
+/***********************************************************************************************************************************************************************************************************/
+/*Media Queries*/
+/***********************************************************************************************************************************************************************************************************/
 /* Import */
 /***********************************************************************************************************************************************************************************************************/
 /***********************************************************************************************************************************************************************************************************/
@@ -372,7 +469,39 @@ body:not(.dark-mode) #darkModeToggleRB:hover {
   --card-header-descriptionRB-font-size: 15px;
   --card-header-descriptionRB2-font-size: 15px;
   --cardRB-date-font-size: 16px;
-  /* DashboardCardRB */ }
+  /* DashboardCardRB */
+  /* Angled Breadcrumb Navigation */
+  --rb-button-from-top: 550px;
+  /* Vertical position */
+  --rb-button-from-left: 20px;
+  /* Horizontal position */
+  --rb-button-margin-right: 1px;
+  /* Gap between breadcrumb items */
+  --rb-color-home: #F0F0F0;
+  /* Home item background color */
+  --rb-color-about: #A2BCF7;
+  /* About Us item background color */
+  --rb-color-product: #749DF5;
+  /* Product item background color */
+  --rb-color-services: #457CF3;
+  /* Services item background color */
+  --rb-color-contact: #165CE8;
+  /* Contact item background color */
+  --rb-font-color-home: #333333;
+  /* Font color for Home item */
+  --rb-font-color-about: #ffffff;
+  /* Font color for About Us item */
+  --rb-font-color-product: #ffffff;
+  /* Font color for Product item */
+  --rb-font-color-services: #ffffff;
+  /* Font color for Services item */
+  --rb-font-color-contact: #ffffff;
+  /* Font color for Contact item */
+  --rb-button-width: auto;
+  /* Make width responsive */
+  --rb-button-height: auto;
+  /* Make height responsive */
+  /* Angled Breadcrumb Navigation */ }
 
 /***********************************************************************************************************************************************************************************************************/
 /*General Styles*/
