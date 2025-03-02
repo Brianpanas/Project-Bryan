@@ -7,6 +7,7 @@
 </head>
 <body>
 
+        <!-- Dark mode -->
         <button
             id="darkModeToggleRB"
             onclick="controller_Btn_DarkMode()"
@@ -15,14 +16,17 @@
             data-dark-img="./src/light-mode.png"
             style="background-image: url('./src/sun.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         </button>
+        <!-- Dark mode -->
 
-
+    <!-- custom-button-RB -->
     <div class="custom-button-RB" onclick="controller_Btn_ButtonRB()">
         <div class="button-text-RB">Click Me</div>
         <div class="button-icon-RB" style="background-image: url('./src/light-mode.png'); background-size: 30px;; background-position: center; background-repeat: no-repeat;">
         </div>
     </div>
+    <!-- custom-button-RB -->
 
+    <!-- DashboardCardRB -->
     <div class="DashboardCardRB">
         <div class="cardRB">
             <div class="card-headerRB">
@@ -70,6 +74,7 @@
 
         <!-- Add more here -->
     </div>
+    <!-- DashboardCardRB -->
 
     <!-- Angled Breadcrumb Navigation -->
     <ul class="rb-breadcrumb">
@@ -88,6 +93,7 @@
         <!-- CONTACT breadcrumb item, marked as the current page -->
         <li class="current"><a href="#"><span>Contact</span></a></li>
     </ul>
+    <!-- Angled Breadcrumb Navigation -->
 
     <!-- RBTP-tabs -->
     <div class="RBTP-tab-container">
