@@ -89,9 +89,30 @@
         <li class="current"><a href="#"><span>Contact</span></a></li>
     </ul>
 
+    <!-- RBTP-tabs -->
+    <div class="RBTP-tab-container">
+        <div class="RBTP-tabs">
+            <button class="RBTP-tab active" onclick="controller_Tab_Switch(0)">Home</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(1)">About</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(2)">Services</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(3)">Contact</button>
+        </div>
+        
+        <div class="RBTP-content active">Welcome to our website!</div>
+        <div class="RBTP-content">This page provides information about our company and mission.</div>
+        <div class="RBTP-content">Our services include web development, design, and consulting.</div>
+        <div class="RBTP-content">Contact us at example@email.com</div>
+    </div>
+    <!-- RBTP-tabs -->
+
+
+
     </div>
     <script type="module" src="./ProjectBry/Scripts/Controller_Btn_DarkMode.js"></script>
     <script type="module"  src="./ProjectBry/Scripts/Controller_Btn_ButtonRB.js"></script>
+    <!-- RBTP-tabs JS -->
+    <script type="module" src="./ProjectBry/Scripts/Controller_Tab_Switch.js"></script>
+    <!-- RBTP-tabs JS -->
 </body>
 </html>
 

@@ -4,6 +4,7 @@
 @import "../../ProjectBry/CSS/ButtonRBStyles";
 @import "../../ProjectBry/CSS/DashboardCardRB";
 @import "../../ProjectBry/CSS/Bread-RB";
+@import "../../ProjectBry/CSS/RBTP_TabbedPage";
 /* Import */
 /***********************************************************************************************************************************************************************************************************/
 
@@ -95,6 +96,22 @@
     --rb-button-width: auto; /* Make width responsive */
     --rb-button-height: auto; /* Make height responsive */
     /* Angled Breadcrumb Navigation */
+
+    /* RBTP_TabbedPage */
+    --RBTP-tab-container-padding: 10px;
+    --RBTP-tab-container-top: 650px;
+    --RBTP-tab-container-left: 30px;
+    --RBTP-tab-container-bg: #f9f9f9;
+    --RBTP-tab-border-color: #ccc;
+    --RBTP-tab-font-size: 16px;
+    --RBTP-tab-font-weight: normal;
+    --RBTP-tab-font-color: #000;
+    --RBTP-tab-active-font-weight: bold;
+    --RBTP-tab-active-border-color: #007BFF;
+
+    --RBTP-content-font-size: 16px;
+    --RBTP-tab-content-weight: normal;
+    /* RBTP_TabbedPage */
 }
 
 

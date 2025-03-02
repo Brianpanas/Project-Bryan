@@ -260,6 +260,67 @@
 }    
 
 
+* For the DashboardCardRB: 
+
+    • Import "ProjectBry/CSS/TabbedPage" to your scss file.
+    • Add this htlm:
+
+    <!-- RBTP-tabs -->
+    <div class="RBTP-tab-container">
+        <div class="RBTP-tabs">
+            <button class="RBTP-tab active" onclick="controller_Tab_Switch(0)">Home</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(1)">About</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(2)">Services</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(3)">Contact</button>
+        </div>
+        
+        <div class="RBTP-content active">Welcome to our website!</div>
+        <div class="RBTP-content">This page provides information about our company and mission.</div>
+        <div class="RBTP-content">Our services include web development, design, and consulting.</div>
+        <div class="RBTP-content">Contact us at example@email.com</div>
+    </div>
+
+    <script type="module" src="./ProjectBry/Scripts/Controller_Tab_Switch.js"></script>
+    <!-- RBTP-tabs -->
+
+   • To add more tabs just make a copy from RBTP-tab class and RBTP-content class and paste below from the one you copied. 
+
+   • Example: 
+
+    <div class="RBTP-tab-container">
+        <div class="RBTP-tabs">
+            <button class="RBTP-tab active" onclick="controller_Tab_Switch(0)">Home</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(1)">About</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(2)">Services</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(3)">Contact</button>
+            <button class="RBTP-tab" onclick="controller_Tab_Switch(4)">Additional Content</button>
+        </div>
+        
+        <div class="RBTP-content active">Welcome to our website!</div>
+        <div class="RBTP-content">This page provides information about our company and mission.</div>
+        <div class="RBTP-content">Our services include web development, design, and consulting.</div>
+        <div class="RBTP-content">Contact us at example@email.com</div>
+        <div class="RBTP-content">Addional Content</div>
+    </div>
+
+    • Codes need to change the appearance and place the tabs wherever you want in the screen 
+
+
+    :root {
+
+    --RBTP-tab-container-padding: 10px;
+    --RBTP-tab-container-top: 20px;
+    --RBTP-tab-container-left: 30px;
+    --RBTP-tab-container-bg: #f9f9f9;
+    --RBTP-tab-border-color: #ccc;
+    --RBTP-tab-font-size: 16px;
+    --RBTP-tab-font-weight: normal;
+    --RBTP-tab-font-color: #000;
+    --RBTP-tab-active-font-weight: bold;
+    --RBTP-tab-active-border-color: #007BFF;
+
+}
+
 * Final Notes: 
 
 Make sure to adjust paths to the PBStyle.css and image files based on your project’s folder structure.
