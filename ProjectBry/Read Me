@@ -260,7 +260,7 @@
 }    
 
 
-* For the DashboardCardRB: 
+* Tabbed Page: 
 
     • Import "ProjectBry/CSS/TabbedPage" to your scss file.
     • Add this htlm:
@@ -309,8 +309,6 @@
     :root {
 
     --RBTP-tab-container-padding: 10px;
-    --RBTP-tab-container-top: 20px;
-    --RBTP-tab-container-left: 30px;
     --RBTP-tab-container-bg: #f9f9f9;
     --RBTP-tab-border-color: #ccc;
     --RBTP-tab-font-size: 16px;
